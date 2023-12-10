@@ -1,9 +1,8 @@
 package advent.code;
 
-import advent.code.solutions.DayOneTrebuchet;
+import advent.code.solutions.DayOne.DayOneTrebuchet;
 import advent.code.solutions.Solution;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
