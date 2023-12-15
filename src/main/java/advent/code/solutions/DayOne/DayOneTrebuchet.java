@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Stream;
 
-public class DayOneTrebuchet implements Solution {
+public class DayOneTrebuchet extends Solution {
 
     private int totalNum = 0;
 
@@ -39,7 +39,7 @@ public class DayOneTrebuchet implements Solution {
         should output 12, 28, 16, 77
          */
 
-        List<String> inputCodes = readInputCodes("src/main/resources/input-codes-day1");
+        List<String> inputCodes = readInputFile("src/main/resources/input-codes-day-1");
         System.out.println("INPUT CODES: " + inputCodes);
 
         inputCodes.stream()
@@ -145,16 +145,6 @@ public class DayOneTrebuchet implements Solution {
         } catch (Exception ignored){
         }
         return false;
-    }
-
-    private List<String> readInputCodes(String filePath){
-        Path path = Paths.get(filePath);
-        try {
-            return Files.readAllLines(path);
-        } catch (IOException e) {
-            System.out.println("ERROR: " + e);
-        }
-        return Collections.emptyList();
     }
 
     public int getTotalNum(){
